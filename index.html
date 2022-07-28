@@ -2,11 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe Game</title>
   </head>
+
   <body>
-    Hi
+    <div class="main">
+      <h1>Hello world!</h1>
+
+      <div class="container">
+        <div class="playingField" id="playingField">
+          <div class="rowOne">
+            <div class="field field1"></div>
+            <div class="field field2"></div>
+            <div class="field field3"></div>
+          </div>
+
+          <div class="rowTwo">
+            <div class="field field4"></div>
+            <div class="field field5"></div>
+            <div class="field field6"></div>
+          </div>
+
+          <div class="rowThree">
+            <div class="field field7"></div>
+            <div class="field field8"></div>
+            <div class="field field9"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="managerButton">
+        <div class="buttonCross" id="X">X</div>
+        <div class="buttonZero" id="O">O</div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
