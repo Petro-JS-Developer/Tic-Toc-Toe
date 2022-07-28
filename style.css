@@ -28,6 +28,7 @@
   background-color: rgb(130, 238, 166);
 }
 .rowThree {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -115,4 +116,28 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.line {
+  position: absolute;
+  height: 5px;
+  background-color: black;
+  animation-duration: 3s;
+  animation-name: slidein;
+  z-index: 1000;
+}
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
